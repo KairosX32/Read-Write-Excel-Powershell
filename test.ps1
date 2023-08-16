@@ -2,7 +2,7 @@
 $excel = New-Object -ComObject Excel.Application
 
 # Open the Excel file
-$workbook = $excel.Workbooks.Open("C:\Users\anujs\WatchedDir\testUsers.xlsx")
+$workbook = $excel.Workbooks.Open("C:/filepath")
 
 # Select the worksheet
 $worksheet = $workbook.Sheets.Item(1)
@@ -37,7 +37,7 @@ for ($row = 1; $row -le $rows; $row++) {
 $workbook.Close()
 
 # Open the destination Excel file
-$destinationWorkbook = $excel.Workbooks.Open("C:\Users\anujs\WatchedDir\uploadUsers.xlsx")
+$destinationWorkbook = $excel.Workbooks.Open("C:/filepath")
 
 # Select the worksheet
 $destinationWorksheet = $destinationWorkbook.Sheets.Item(1)
